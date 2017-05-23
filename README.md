@@ -26,7 +26,7 @@ This includes 2 parts:
   <p align="center">
   <img src="https://raw.githubusercontent.com/brandoncox/basic-auth-gateway-customization/master/images/serviceid.png?raw=true" width="350"/>
 </p>
-        - oc new-app -f https://raw.githubusercontent.com/3scale/apicast/v3.0.0/openshift/apicast-template.yml -p IMAGE_NAME=172.30.87.166:5000/gateway-unmodified/test-apicast-customization -p SERVICES_LIST=<Service ID> -p LOG_LEVEL=info
+    - oc new-app -f https://raw.githubusercontent.com/3scale/apicast/v3.0.0/openshift/apicast-template.yml -p IMAGE_NAME=172.30.87.166:5000/gateway-unmodified/test-apicast-customization -p SERVICES_LIST=<Service ID> -p LOG_LEVEL=info
    
    8) Configure extra deployment ENV Var:
         - oc env dc/apicast THREESCALE_DEPLOYMENT_ENV-
