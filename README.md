@@ -6,10 +6,9 @@
     
 ## To run the Gateway
   1) fork this repo
-  2) change the line in apicast.conf that matches 
+  2) change the line in apicast.conf that matches below to reflect your header's actual value
         - proxy_set_header Authorization "Basic am9objpzZWNyZXQ="; 
-       - to reflect your header's actual value
-  3) Create a OCP Build:
+  3) Create a OCP Build for the Custom Gateway:
         - oc new-build https://github.com/brandoncox/basic-auth-gateway-customization --strategy=docker
   4) Get the image stream URL
         - oc get is/basic-auth-gateway-customization
