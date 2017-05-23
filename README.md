@@ -1,7 +1,8 @@
 # basic-auth-gateway-customization
 This includes 2 parts:
-    A customized Gateway
-    A webservice that has basic-auth enabled
+    - A customized Gateway
+    - A webservice that has basic-auth enabled
+    
 ## To run the Gateway
   1) fork this repo
   2) change the line in apicast.conf that matches 
