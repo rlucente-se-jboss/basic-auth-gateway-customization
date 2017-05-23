@@ -22,14 +22,11 @@ This includes 2 parts:
       - eg. oc secret new-basicauth apicast-configuration-url-secret --password=https://494e4a5bf9252458c06f35176f9121414ecacaed212be3a6ec91a58ff3@bcox-admin.3scale.net
       
   7) Deploy the Custom Gateway from the Image Stream:
-  
+     - You will get the Service ID from 3scale where you manage your API as shown in the image above.
   <p align="center">
   <img src="https://raw.githubusercontent.com/brandoncox/basic-auth-gateway-customization/master/images/serviceid.png?raw=true" width="350"/>
 </p>
-    
-    You will get the Service ID from 3scale where you manage your API as shown in the image above.
-  
-     - oc new-app -f https://raw.githubusercontent.com/3scale/apicast/v3.0.0/openshift/apicast-template.yml -p IMAGE_NAME=172.30.87.166:5000/gateway-unmodified/test-apicast-customization -p SERVICES_LIST=<Service ID> -p LOG_LEVEL=info
+        - oc new-app -f https://raw.githubusercontent.com/3scale/apicast/v3.0.0/openshift/apicast-template.yml -p IMAGE_NAME=172.30.87.166:5000/gateway-unmodified/test-apicast-customization -p SERVICES_LIST=<Service ID> -p LOG_LEVEL=info
    
    8) Configure extra deployment ENV Var:
         - oc env dc/apicast THREESCALE_DEPLOYMENT_ENV-
