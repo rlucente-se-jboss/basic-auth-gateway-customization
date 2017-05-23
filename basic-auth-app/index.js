@@ -3,7 +3,7 @@ var auth = require('basic-auth')
 var app = express()
 
 app.get('/', function (req, res) {
-
+/*
   var credentials = auth(req)
  
   if (!credentials || credentials.name !== 'john' || credentials.pass !== 'secret') {
@@ -12,8 +12,8 @@ app.get('/', function (req, res) {
     res.end('Access denied')
   } else {
     res.end('Access granted')
-  }
-
+  }*/
+ res.end('Access granted')
 })
 
 app.listen(8080, function () {
