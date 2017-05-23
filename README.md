@@ -7,8 +7,8 @@ This includes 2 parts:
   2) change the line in apicast.conf that matches 
         - proxy_set_header Authorization "Basic am9objpzZWNyZXQ="; 
        - to reflect your header's actual value
-  3) Create a OCP Build 
-    - oc new-build https://github.com/brandoncox/basic-auth-gateway-customization --strategy=docker
+  3) Create a OCP Build:
+        - oc new-build https://github.com/brandoncox/basic-auth-gateway-customization --strategy=docker
   4) Get the image stream URL
         - oc get is/basic-auth-gateway-customization
         - RESULT:
