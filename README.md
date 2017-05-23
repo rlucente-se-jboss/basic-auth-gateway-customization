@@ -23,7 +23,9 @@ This includes 2 parts:
       
   7) Deploy the Custom Gateway from the Image Stream:
   
-    ![Alt text](https://raw.githubusercontent.com/brandoncox/basic-auth-gateway-customization/master/images/serviceid.png?raw=true "Title")
+  <p align="center">
+  <img src="https://raw.githubusercontent.com/brandoncox/basic-auth-gateway-customization/master/images/serviceid.png?raw=true" width="350"/>
+</p>
     
     You will get the Service ID from 3scale where you manage your API as shown in the image above.
   
