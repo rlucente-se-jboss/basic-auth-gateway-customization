@@ -1,7 +1,8 @@
 # basic-auth-gateway-customization
-This includes 2 parts:
-    - A customized Gateway
-    - A webservice that has basic-auth enabled
+
+## This includes 2 pieces
+    1) A customized Gateway
+    2) A webservice that has basic-auth enabled
     
 ## To run the Gateway
   1) fork this repo
