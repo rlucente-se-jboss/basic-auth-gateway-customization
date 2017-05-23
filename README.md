@@ -23,7 +23,9 @@ This includes 2 parts:
       
   7) Deploy the Custom Gateway from the Image Stream:
   
-        ![Alt text](basic-auth-gateway-customization/images/serviceid.png?raw=true "Service ID")
+    ![Alt text](https://raw.githubusercontent.com/brandoncox/basic-auth-gateway-customization/master/images/serviceid.png?raw=true "Title")
+    
+    You will get the Service ID from 3scale where you manage your API as shown in the image above.
   
      - oc new-app -f https://raw.githubusercontent.com/3scale/apicast/v3.0.0/openshift/apicast-template.yml -p IMAGE_NAME=172.30.87.166:5000/gateway-unmodified/test-apicast-customization -p SERVICES_LIST=<Service ID> -p LOG_LEVEL=info
    
