@@ -22,3 +22,10 @@ This includes 2 parts:
   7) Deploy the Custom Gateway from the Image Stream:
   
      - oc new-app -f https://raw.githubusercontent.com/3scale/apicast/v3.0.0/openshift/apicast-template.yml -p IMAGE_NAME=172.30.87.166:5000/gateway-unmodified/test-apicast-customization -p SERVICES_LIST=<UNIQUE_3SCALE_ID> -p LOG_LEVEL=info
+   
+   8) Configure extra deployment ENV Var:
+        - oc env dc/apicast THREESCALE_DEPLOYMENT_ENV-
+   9) Expose the route:
+        - oc expose service/apicast
+        
+    From here you should be able to use this route as your production APICast gateway and curl it directly with ONLY the user key without needing to provide the basic-auth header. 
